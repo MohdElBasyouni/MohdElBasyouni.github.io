@@ -3,66 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohamed ElBasyouni - Resume">
+    <meta name="description" content="Resume - Mohamed ElBasyouni">
     <title>Resume - Mohamed ElBasyouni</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f9f9f9;
             color: #333;
-            line-height: 1.6;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 20px;
             background-color: #fff;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        h1, h2, h3 {
             color: #0056b3;
-            text-align: center;
-            margin-bottom: 5px;
-        }
-        h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-            margin-top: 40px;
-        }
-        p {
-            margin: 10px 0;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
             margin-bottom: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 0;
+        }
+        .subheading {
+            text-align: center;
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
         }
         .contact-info {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
         .contact-info a {
             color: #0056b3;
             text-decoration: none;
         }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
         .skills-list, .certifications-list {
             columns: 2;
         }
-        .experience h3 {
-            margin: 0;
+        .experience h3, .experience h4 {
             color: #333;
+            margin: 0;
+        }
+        .experience .role {
+            font-weight: bold;
+        }
+        .experience h4 {
+            margin-top: 5px;
         }
         .experience ul {
             margin-top: 10px;
         }
         .experience ul li {
             margin-bottom: 8px;
+        }
+        .education, .certifications, .hobbies {
+            margin-top: 20px;
         }
         .footer {
             text-align: center;
@@ -81,88 +106,96 @@
 
     <div class="container">
         <h1>Mohamed ElBasyouni</h1>
+        <p class="subheading">Senior Network NPI Engineer | Solution Architect | Mobile Network Expert</p>
 
         <div class="contact-info">
-            <p>Email: <a href="mailto:moh.elbasyouni@gmail.com">moh.elbasyouni@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/melbasyouni" target="_blank">linkedin.com/in/melbasyouni</a></p>
-            <p>Location: Junction Street, Ryde, NSW 2112, Australia</p>
-            <p>Phone: +61 404 139 550</p>
+            <p><strong>Email:</strong> <a href="mailto:moh.elbasyouni@gmail.com">moh.elbasyouni@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/melbasyouni" target="_blank">linkedin.com/in/melbasyouni</a></p>
+            <p><strong>Location:</strong> Junction Street, Ryde, NSW 2112, Australia</p>
+            <p><strong>Phone:</strong> +61 404 139 550</p>
         </div>
 
         <h2>Professional Summary</h2>
-        <p>Experienced professional in Mobile Radio network optimisation, SON Development methodologies with over 15 years of experience. Bringing innovative ideas to reduce costs, enhance quality, and increase productivity. Proficient in delivering high-quality technical solutions and solving complex problems. Highly organized, detail-oriented, and experienced in managing projects from conception to completion.</p>
+        <p>Experienced professional in Mobile Radio network optimisation, SON Development methodologies with 15+ years of experience. Skilled in delivering high-quality solutions and solving complex technical issues in the telecommunications industry. Organized, detail-oriented, and effective in project management, bringing innovative strategies to reduce costs, enhance quality, and improve productivity.</p>
 
         <h2>Professional Skills</h2>
         <ul class="skills-list">
-            <li>Expert in 3GPP releases, 5G NSA & SA, LTE, and NB-IoT</li>
-            <li>In-depth knowledge of O-RAN, 5G CA, and RF troubleshooting</li>
-            <li>Proficient in UNIX, Python (Pandas, NumPy), and data analytics</li>
-            <li>Advanced SQL (SQLite, MySQL, PostgreSQL)</li>
-            <li>Deep use of Git, GitHub, GitLab for version control</li>
-            <li>Data visualization with Qlik-sense, Tableau, Power BI</li>
-            <li>Microsoft Azure Administration</li>
-            <li>Project management tools like Asana and MS Project</li>
+            <li><strong>Network Optimization:</strong> 5G NSA & SA, LTE, NB-IoT, O-RAN, 3GPP Releases</li>
+            <li><strong>Software & Tools:</strong> UNIX, Python (Pandas, NumPy), QGIS, SQL (PostgreSQL, MySQL)</li>
+            <li><strong>Automation:</strong> Git, GitHub, GitLab, Tableau, Power BI, Grafana, Telegraf, InfluxDB</li>
+            <li><strong>Cloud & Infrastructure:</strong> Microsoft Azure Administration, Time Series PaaS</li>
+            <li><strong>Telecom Solutions:</strong> RF troubleshooting, 5G CA, 5G SA Traffic Steering, E2E RAN software upgrades</li>
+            <li><strong>Project Management:</strong> Asana, MS Project, Go-to-Market Strategies</li>
         </ul>
 
         <h2>Work Experience</h2>
 
         <div class="experience">
-            <h3>Senior Network NPI Engineer, Ericsson Australia (Jan 2022 - Present)</h3>
+            <h3>Senior Network NPI Engineer, Ericsson Australia</h3>
+            <h4>January 2022 - Present</h4>
             <ul>
-                <li>Performed E2E RAN software upgrades for customer networks.</li>
-                <li>Solution Architect for 5G onboarding features and software upgrades.</li>
-                <li>Collaborated with stakeholders to update baselines and reports.</li>
+                <li>Led end-to-end RAN software upgrade projects for customer networks, including documentation, testing, and rollout.</li>
+                <li>Architected 5G onboarding solutions for both NSA and SA across Low, Mid, and High Band configurations.</li>
+                <li>Collaborated closely with stakeholders to align testing, feature rollout, and baseline updates.</li>
+                <li>Developed Python scripts for early detection of non-reporting nodes in 5G onboarding.</li>
                 <li>Key Achievements:
                     <ul>
-                        <li>Reduced drop rate by 3% via Beamforming.</li>
-                        <li>Successful rollout of 5G SA Traffic Steering features.</li>
-                        <li>Developed automation scripts using Python and VBA.</li>
+                        <li>Reduced drop rate by 3% through the successful delivery of PDCCH Beamforming features.</li>
+                        <li>Successfully onboarded 5G SA Traffic Steering bundle features.</li>
+                        <li>Created real-time monitoring solution using Python, PostgreSQL, and Grafana.</li>
                     </ul>
                 </li>
             </ul>
 
-            <h3>Solution Architect, Etisalat MNO UAE (Sep 2014 - Jan 2022)</h3>
+            <h3>Solution Architect, Etisalat MNO UAE</h3>
+            <h4>September 2014 - January 2022</h4>
             <ul>
-                <li>Optimized 4G/5G networks with detailed KPI analytics.</li>
-                <li>Designed multi-vendor SON platforms for mobile networks.</li>
-                <li>Created data visualization dashboards for KPI insights using BI tools.</li>
+                <li>Planned and optimized 4G/5G NSA and SA networks, focusing on both design and problem-solving.</li>
+                <li>Developed a multi-vendor, multi-technology SON platform for optimization and automation.</li>
+                <li>Designed data visualization dashboards using Power BI, Qlik-sense, and Tableau to enhance KPI insights.</li>
                 <li>Key Achievements:
                     <ul>
-                        <li>Increased 5G traffic penetration by 30%.</li>
-                        <li>Enhanced handover strategies and reduced drop rates.</li>
+                        <li>Expanded 5G NR footprint by 300%, increasing traffic penetration to over 30%.</li>
+                        <li>Reduced drop rate through advanced troubleshooting and parameter adjustments.</li>
                     </ul>
                 </li>
             </ul>
 
-            <h3>Senior Telecom Deployment Engineer, Etisalat MNO Egypt (Aug 2011 - Aug 2014)</h3>
+            <h3>Senior Telecom Deployment Engineer, Etisalat MNO Egypt</h3>
+            <h4>August 2011 - August 2014</h4>
             <ul>
-                <li>Deployed and optimized Microwave and Wi-Fi connections for VIP clients.</li>
-                <li>Successfully implemented UMTS 900 as a 3rd Carrier solution in Egypt.</li>
+                <li>Deployed and optimized microwave and Wi-Fi connections for high-value customers and VIPs.</li>
+                <li>Led UMTS 900 implementation as a third carrier solution for various cities in Egypt.</li>
             </ul>
 
-            <h3>Senior BSS Engineer, NESIC (Sep 2009 - Aug 2011)</h3>
+            <h3>Senior BSS Engineer, NEC Networks and Systems Integration Corporation</h3>
+            <h4>September 2009 - August 2011</h4>
             <ul>
-                <li>Expanded and optimized 3G/2G networks across various regions.</li>
-                <li>Worked on Huawei and NEC microwave link installations and configurations.</li>
+                <li>Led the installation and optimization of Huawei and NEC microwave links and BSS equipment.</li>
+                <li>Supported 3G network expansion projects across multiple regions.</li>
             </ul>
         </div>
 
         <h2>Education</h2>
-        <p><strong>B.Sc. in Electrical Engineering, Communication and Electronics</strong> - Mansoura University (Spring 2009)</p>
-        <p><strong>Graduation Project:</strong> Multi-User Code Division Multiple Access (CDMA) with Distinction</p>
+        <div class="education">
+            <p><strong>B.Sc. in Electrical Engineering, Communication and Electronics</strong></p>
+            <p>Mansoura University, Egypt (2009)</p>
+            <p><em>Graduation Project:</em> Multi-User CDMA using Direct Sequence Spread Spectrum (DS-SS) - Grade: Distinction</p>
+        </div>
 
         <h2>Certifications</h2>
         <ul class="certifications-list">
-            <li>Ericsson Certified Associate - Ericsson 5G RAN Services (2024)</li>
+            <li>Ericsson Certified Professional - 5G RAN Services (2024)</li>
             <li>Microsoft Azure Administrator (2021)</li>
-            <li>SAFe 6 Agilist, PMI-ACP, PMP, Scrum Master (Various Dates)</li>
+            <li>Certified SAFe 6 Agilist, PMI-ACP, Scrum Master (Various Dates)</li>
+            <li>Project Management Professional (PMP) (2016)</li>
         </ul>
 
         <h2>Personal Skills</h2>
-        <p>Highly self-motivated, creative, and enthusiastic with strong organizational skills. Able to work under stress, meet tight deadlines, and manage complex projects. Fluent in tools like Notion, ClickUp, Obsidian, and Whimsical for effective project management.</p>
+        <p>Creative, motivated, and detail-oriented. Strong leadership skills with experience managing complex projects. Able to work effectively under pressure and meet tight deadlines using tools like Notion, ClickUp, Obsidian, and Whimsical.</p>
 
         <h2>Hobbies and Interests</h2>
-        <p>Swimming, Gym, Travelling, Exploring new cultures.</p>
+        <p>Swimming, Gym, Traveling, Exploring new cultures</p>
 
         <div class="footer">
             <p>Last Updated: 27th June 2024</p>
