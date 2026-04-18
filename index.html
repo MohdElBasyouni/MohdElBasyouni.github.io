@@ -1,206 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resume - Mohamed ElBasyouni">
-    <title>Resume - Mohamed ElBasyouni</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            color: #0056b3;
-            margin-bottom: 10px;
-        }
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 0;
-        }
-        .subheading {
-            text-align: center;
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 30px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .contact-info a {
-            color: #0056b3;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            margin-top: 40px;
-        }
-        h3 {
-            margin-top: 20px;
-            margin-bottom: 5px;
-        }
-        p {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        ul {
-            list-style: none;
-            padding-left: 20px;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        .skills-list, .certifications-list {
-            columns: 2;
-        }
-        .experience h3, .experience h4 {
-            color: #333;
-            margin: 0;
-        }
-        .experience .role {
-            font-weight: bold;
-        }
-        .experience h4 {
-            margin-top: 5px;
-        }
-        .experience ul {
-            margin-top: 10px;
-        }
-        .experience ul li {
-            margin-bottom: 8px;
-        }
-        .education, .certifications, .hobbies {
-            margin-top: 20px;
-        }
-        .footer {
-            text-align: center;
-            padding-top: 20px;
-            font-size: 14px;
-            color: #777;
-        }
-        @media (max-width: 768px) {
-            .skills-list, .certifications-list {
-                columns: 1;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed | Telecom Engineer</title>
+  <meta name="description" content="Mohamed's GitHub homepage - Telecom Engineer with SMO/O-RAN passion." />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #121a2b;
+      --panel-2: #18233a;
+      --text: #e8eefc;
+      --muted: #a9b7d3;
+      --accent: #61dafb;
+      --accent-2: #7ee787;
+      --border: #26334d;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --max: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 24px; }
+    .hero {
+      padding: 56px 24px 28px;
+      text-align: center;
+    }
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+    }
+    .hero p {
+      margin: 0 auto;
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .badges {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      border-radius: 999px;
+      color: var(--text);
+      font-size: .95rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .card {
+      background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+    .contact a {
+      word-break: break-word;
+    }
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .tool {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 8px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: rgba(255,255,255,.03);
+      text-align: center;
+      min-height: 92px;
+    }
+    .tool img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+      background: white;
+      border-radius: 10px;
+      padding: 4px;
+    }
+    .tool span {
+      font-size: .82rem;
+      color: var(--muted);
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .stats img, .trophy img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+    }
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 28px 24px 40px;
+      font-size: .95rem;
+    }
+    .highlight {
+      color: var(--accent-2);
+      font-weight: 600;
+    }
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding-top: 40px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <section class="hero wrap">
+    <h1>Hi 👋, I'm Mohamed</h1>
+    <p>A human telecom engineer with <span class="highlight">SMO / O-RAN</span> passion, focused on RF optimisation, automation, and building practical telecom software.</p>
+    <div class="badges">
+      <div class="badge">🔭 Working on <strong>SMO Project</strong></div>
+      <div class="badge">🌱 Learning <strong>as much as possible</strong></div>
+      <div class="badge">🤝 Looking for <strong>rApp ideas</strong></div>
+      <div class="badge">💬 Ask me about <strong>RF Optimisation, especially Ericsson</strong></div>
+    </div>
+  </section>
 
-    <div class="container">
-        <h1>Mohamed ElBasyouni</h1>
-        <p class="subheading">Senior Network NPI Engineer | Solution Architect | Mobile Network Expert</p>
+  <main class="wrap">
+    <div class="grid">
+      <section class="card">
+        <h2>About</h2>
+        <p>I work at the intersection of <strong>telecom engineering</strong>, <strong>network automation</strong>, and <strong>software</strong>. My main interests include SMO, O-RAN, rApps, RF optimisation, and building tools that make network operations smarter and faster.</p>
 
-        <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:moh.elbasyouni@gmail.com">moh.elbasyouni@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/melbasyouni" target="_blank">linkedin.com/in/melbasyouni</a></p>
-            <p><strong>Location:</strong> Junction Street, Ryde, NSW 2112, Australia</p>
-            <p><strong>Phone:</strong> +61 404 139 550</p>
-        </div>
-
-        <h2>Professional Summary</h2>
-        <p>Experienced professional in Mobile Radio network optimisation, SON Development methodologies with 15+ years of experience. Skilled in delivering high-quality solutions and solving complex technical issues in the telecommunications industry. Organized, detail-oriented, and effective in project management, bringing innovative strategies to reduce costs, enhance quality, and improve productivity.</p>
-
-        <h2>Professional Skills</h2>
-        <ul class="skills-list">
-            <li><strong>Network Optimization:</strong> 5G NSA & SA, LTE, NB-IoT, O-RAN, 3GPP Releases</li>
-            <li><strong>Software & Tools:</strong> UNIX, Python (Pandas, NumPy), QGIS, SQL (PostgreSQL, MySQL)</li>
-            <li><strong>Automation:</strong> Git, GitHub, GitLab, Tableau, Power BI, Grafana, Telegraf, InfluxDB</li>
-            <li><strong>Cloud & Infrastructure:</strong> Microsoft Azure Administration, Time Series PaaS</li>
-            <li><strong>Telecom Solutions:</strong> RF troubleshooting, 5G CA, 5G SA Traffic Steering, E2E RAN software upgrades</li>
-            <li><strong>Project Management:</strong> Asana, MS Project, Go-to-Market Strategies</li>
+        <h2>Current Focus</h2>
+        <ul>
+          <li>Building and exploring <strong>SMO-oriented solutions</strong></li>
+          <li>Learning by doing across <strong>software, automation, and telecom</strong></li>
+          <li>Exploring practical and valuable <strong>rApp ideas</strong></li>
         </ul>
+      </section>
 
-        <h2>Work Experience</h2>
+      <aside class="card contact">
+        <h2>Contact</h2>
+        <p>📫 <a href="mailto:moh.elbasyouni@gmail.com">moh.elbasyouni@gmail.com</a></p>
+        <p>👀 Profile views</p>
+        <img src="https://komarev.com/ghpvc/?username=mohdelbasyouni&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views counter" />
 
-        <div class="experience">
-            <h3>Senior Network NPI Engineer, Ericsson Australia</h3>
-            <h4>January 2022 - Present</h4>
-            <ul>
-                <li>Led end-to-end RAN software upgrade projects for customer networks, including documentation, testing, and rollout.</li>
-                <li>Architected 5G onboarding solutions for both NSA and SA across Low, Mid, and High Band configurations.</li>
-                <li>Collaborated closely with stakeholders to align testing, feature rollout, and baseline updates.</li>
-                <li>Developed Python scripts for early detection of non-reporting nodes in 5G onboarding.</li>
-                <li>Key Achievements:
-                    <ul>
-                        <li>Reduced drop rate by 3% through the successful delivery of PDCCH Beamforming features.</li>
-                        <li>Successfully onboarded 5G SA Traffic Steering bundle features.</li>
-                        <li>Created real-time monitoring solution using Python, PostgreSQL, and Grafana.</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h3>Solution Architect, Etisalat MNO UAE</h3>
-            <h4>September 2014 - January 2022</h4>
-            <ul>
-                <li>Planned and optimized 4G/5G NSA and SA networks, focusing on both design and problem-solving.</li>
-                <li>Developed a multi-vendor, multi-technology SON platform for optimization and automation.</li>
-                <li>Designed data visualization dashboards using Power BI, Qlik-sense, and Tableau to enhance KPI insights.</li>
-                <li>Key Achievements:
-                    <ul>
-                        <li>Expanded 5G NR footprint by 300%, increasing traffic penetration to over 30%.</li>
-                        <li>Reduced drop rate through advanced troubleshooting and parameter adjustments.</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h3>Senior Telecom Deployment Engineer, Etisalat MNO Egypt</h3>
-            <h4>August 2011 - August 2014</h4>
-            <ul>
-                <li>Deployed and optimized microwave and Wi-Fi connections for high-value customers and VIPs.</li>
-                <li>Led UMTS 900 implementation as a third carrier solution for various cities in Egypt.</li>
-            </ul>
-
-            <h3>Senior BSS Engineer, NEC Networks and Systems Integration Corporation</h3>
-            <h4>September 2009 - August 2011</h4>
-            <ul>
-                <li>Led the installation and optimization of Huawei and NEC microwave links and BSS equipment.</li>
-                <li>Supported 3G network expansion projects across multiple regions.</li>
-            </ul>
+        <div class="trophy" style="margin-top:16px;">
+          <a href="https://github.com/ryo-ma/github-profile-trophy" target="_blank" rel="noreferrer">
+            <img src="https://github-profile-trophy.vercel.app/?username=mohdelbasyouni&theme=algolia&margin-w=8&margin-h=8" alt="GitHub trophies" />
+          </a>
         </div>
-
-        <h2>Education</h2>
-        <div class="education">
-            <p><strong>B.Sc. in Electrical Engineering, Communication and Electronics</strong></p>
-            <p>Mansoura University, Egypt (2009)</p>
-            <p><em>Graduation Project:</em> Multi-User CDMA using Direct Sequence Spread Spectrum (DS-SS) - Grade: Distinction</p>
-        </div>
-
-        <h2>Certifications</h2>
-        <ul class="certifications-list">
-            <li>Ericsson Certified Professional - 5G RAN Services (2024)</li>
-            <li>Microsoft Azure Administrator (2021)</li>
-            <li>Certified SAFe 6 Agilist, PMI-ACP, Scrum Master (Various Dates)</li>
-            <li>Project Management Professional (PMP) (2016)</li>
-        </ul>
-
-        <h2>Personal Skills</h2>
-        <p>Creative, motivated, and detail-oriented. Strong leadership skills with experience managing complex projects. Able to work effectively under pressure and meet tight deadlines using tools like Notion, ClickUp, Obsidian, and Whimsical.</p>
-
-        <h2>Hobbies and Interests</h2>
-        <p>Swimming, Gym, Traveling, Exploring new cultures</p>
-
-        <div class="footer">
-            <p>Last Updated: 27th June 2024</p>
-        </div>
+      </aside>
     </div>
 
+    <section class="card" style="margin-top:20px;">
+      <h2>Languages & Tools</h2>
+      <div class="tools">
+        <a class="tool" href="https://developer.android.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="Android"><span>Android</span></a>
+        <a class="tool" href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="Bash"><span>Bash</span></a>
+        <a class="tool" href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"><img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="Django"><span>Django</span></a>
+        <a class="tool" href="https://www.docker.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="Docker"><span>Docker</span></a>
+        <a class="tool" href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase"><span>Firebase</span></a>
+        <a class="tool" href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="Flask"><span>Flask</span></a>
+        <a class="tool" href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git"><span>Git</span></a>
+        <a class="tool" href="https://golang.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="Go"><span>Go</span></a>
+        <a class="tool" href="https://grafana.com" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="Grafana"><span>Grafana</span></a>
+        <a class="tool" href="https://kotlinlang.org" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="Kotlin"><span>Kotlin</span></a>
+        <a class="tool" href="https://kubernetes.io" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="Kubernetes"><span>Kubernetes</span></a>
+        <a class="tool" href="https://www.linux.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></a>
+        <a class="tool" href="https://mariadb.org/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="MariaDB"><span>MariaDB</span></a>
+        <a class="tool" href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"><img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="SQL Server"><span>SQL Server</span></a>
+        <a class="tool" href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL"><span>MySQL</span></a>
+        <a class="tool" href="https://www.nginx.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="Nginx"><span>Nginx</span></a>
+        <a class="tool" href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="Pandas"><span>Pandas</span></a>
+        <a class="tool" href="https://www.postgresql.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL"><span>PostgreSQL</span></a>
+        <a class="tool" href="https://postman.com" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"><span>Postman</span></a>
+        <a class="tool" href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python"><span>Python</span></a>
+        <a class="tool" href="https://redis.io" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="Redis"><span>Redis</span></a>
+        <a class="tool" href="https://scikit-learn.org/" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn"><span>Scikit-learn</span></a>
+        <a class="tool" href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"><img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn"><span>Seaborn</span></a>
+        <a class="tool" href="https://www.sqlite.org/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="SQLite"><span>SQLite</span></a>
+        <a class="tool" href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="Swift"><span>Swift</span></a>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="card">
+        <h2>GitHub Stats</h2>
+        <img src="https://github-readme-stats.vercel.app/api?username=mohdelbasyouni&show_icons=true&locale=en" alt="GitHub stats" />
+      </div>
+      <div class="card">
+        <h2>Top Languages</h2>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mohdelbasyouni&show_icons=true&locale=en&layout=compact" alt="Top languages" />
+      </div>
+      <div class="card">
+        <h2>Streak Stats</h2>
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohdelbasyouni" alt="GitHub streak stats" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Built from your GitHub README and converted into a GitHub Pages-ready homepage.
+  </footer>
 </body>
 </html>
